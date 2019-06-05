@@ -5,7 +5,7 @@ from geopy.geocoders import GoogleV3
 from geopy.exc import GeocoderInsufficientPrivileges
 from geopy.exc import GeocoderTimedOut
 
-con = psycopg2.connect("host='localhost' dbname='schoolconnect' user='postgres' password='johann65'")
+con = psycopg2.connect("host='host' dbname='database' user='username' password='password'")
 cur = con.cursor()
 
 @route("/static/css/<filepath:re:.*\.css>")
